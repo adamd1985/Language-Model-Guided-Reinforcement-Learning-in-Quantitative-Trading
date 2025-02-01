@@ -1,0 +1,83 @@
+
+=== gpt-4o-mini LLM Decision & Market Impact: AMZN on 2018-09-01 ===
+
+LLM Decision: LONG
+Rationale: The analysis supports a LONG position based on several compelling indicators. First, the stock is currently trading above its 20MA (90.00) and 50MA (86.47), signaling positive momentum with a recent close at 91.72, indicating strength in price action. Second, the RSI value of 60.43 suggests that while the stock is not overbought yet, it is trending positively which could indicate further upside potential.
+
+Thirdly, despite some mixed analyst views regarding valuation short-term volatility due to trade tensions and tariffs, there are also positive indicators such as analyst upgrades for THE COMPANY’s stock target suggesting expected growth which impacts sentiment positively.
+
+Fourthly, from a fundamental perspective, EPS YoY growth of approximately 8.67% indicates solid profitability trends even though free cash flow has seen negative movement (-5.60%), showing resilience in earnings generation under pressure.
+
+Finally, incorporating macro data shows SPX closing slope >0 and VIX slope <0 indicates bullish market sentiment overall—which favors risk-on strategies—further reinforcing our decision.
+
+Top ranked news factors influencing this decision include: 
+1) "The company reached $1 trillion market cap post-Prime Day boosting sales" - Market Impact Score: 5/5; 
+2) "Analyst upgrades suggest continued growth expectations" - Market Impact Score: 4/5; 
+3) "Launch of new machine learning shopping platform enhances competitiveness" - Market Impact Score: 3/5.
+News Factors Considered: ['THE COMPANY reached a $1 trillion market cap, becoming the second U.S. company to achieve this milestone, which reflects strong investor confidence and market performance, particularly following a successful Prime Day event that significantly boosted sales.', "Analysts express mixed views on THE COMPANY's valuation, with some suggesting it may be overvalued in the short term but not in the long term, indicating potential volatility in stock prices based on market sentiment and earnings expectations.", "The launch of THE COMPANY's new shopping platform, which utilizes machine learning to enhance customer experience, positions it competitively against other retailers, potentially increasing market share and revenue.", 'Trade tensions and tariffs are impacting market sentiment, with analysts noting that the tech sector, including THE COMPANY, may experience fluctuations due to geopolitical factors affecting supply chains and consumer spending.', "Analyst upgrades for THE COMPANY's stock price target suggest positive future performance, indicating that market analysts expect continued growth and profitability, which could drive stock prices higher."]
+
+=== Performance Metrics ===
+
++--------------------------------+------------+
+| Metric                         |      Value |
++================================+============+
+| Sharpe Ratio (Annualized SR)   | -1.70178   |
++--------------------------------+------------+
+| Portfolio Turnover (PTR)       |  0         |
++--------------------------------+------------+
+| Maximum Drawdown (MDD)         |  0.0645225 |
++--------------------------------+------------+
+| Mean Drawdown Duration (MDDur) | 10.5       |
++--------------------------------+------------+
+| Cumulative Returns             | -0.0334379 |
++--------------------------------+------------+
+
+=== LLM Decision Insights ===
+
++-------------------------+----------------+
+| LLM Decision Insights   |          Value |
++=========================+================+
+| Long Probability        |    0.75        |
++-------------------------+----------------+
+| Short Probability       |    0.25        |
++-------------------------+----------------+
+| Long Token Strategy     |   -1.9147e-05  |
++-------------------------+----------------+
+| Short Token Strategy    | -inf           |
++-------------------------+----------------+
+| Long Token Probability  |   -4.5491e-05  |
++-------------------------+----------------+
+| Short Token Probability | -inf           |
++-------------------------+----------------+
+| Perplexity              |    2.38182e+29 |
++-------------------------+----------------+
+
+=== Token Usage & Cost Analysis for Ensemble ===
+
++----------------------------------+-----------+
+| Token Metrics                    | Value     |
++==================================+===========+
+| Prompt Tokens (Strategist)       | 3307      |
++----------------------------------+-----------+
+| Completion Tokens (Strategist)   | 300       |
++----------------------------------+-----------+
+| Prompt Tokens (Judge)            | 1536      |
++----------------------------------+-----------+
+| Completion Tokens (Judge)        | 22        |
++----------------------------------+-----------+
+| Prompt Tokens (News Analyst)     | 40982     |
++----------------------------------+-----------+
+| Completion Tokens (News Analyst) | 190       |
++----------------------------------+-----------+
+| Total Prompt Tokens              | 45825     |
++----------------------------------+-----------+
+| Total Completion Tokens          | 512       |
++----------------------------------+-----------+
+| Total Tokens                     | 46337     |
++----------------------------------+-----------+
+| Input Cost (USD)                 | $0.006874 |
++----------------------------------+-----------+
+| Output Cost (USD)                | $0.000307 |
++----------------------------------+-----------+
+| Total Cost (USD)                 | $0.007181 |
++----------------------------------+-----------+
