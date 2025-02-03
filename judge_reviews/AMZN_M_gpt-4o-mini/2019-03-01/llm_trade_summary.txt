@@ -1,0 +1,83 @@
+
+=== gpt-4o-mini LLM Decision & Market Impact: AMZN on 2019-03-01 ===
+
+LLM Decision: LONG
+Rationale: The analysis supports a LONG position based on several compelling indicators. First, the stock is currently trading above its 20MA (90.00) and 50MA (86.47), signaling positive momentum with a recent close at 91.72, indicating strength in price action. Second, the RSI value of 60.43 suggests that while the stock is not overbought yet, it is trending positively which could indicate further upside potential.
+
+Thirdly, despite some mixed analyst views regarding valuation short-term volatility due to trade tensions and tariffs, there are also positive indicators such as analyst upgrades for THE COMPANY’s stock target suggesting expected growth which impacts sentiment positively.
+
+Fourthly, from a fundamental perspective, EPS YoY growth of approximately 8.67% indicates solid profitability trends even though free cash flow has seen negative movement (-5.60%), showing resilience in earnings generation under pressure.
+
+Finally, incorporating macro data shows SPX closing slope >0 and VIX slope <0 indicates bullish market sentiment overall—which favors risk-on strategies—further reinforcing our decision.
+
+Top ranked news factors influencing this decision include: 
+1) "The company reached $1 trillion market cap post-Prime Day boosting sales" - Market Impact Score: 5/5; 
+2) "Analyst upgrades suggest continued growth expectations" - Market Impact Score: 4/5; 
+3) "Launch of new machine learning shopping platform enhances competitiveness" - Market Impact Score: 3/5.
+News Factors Considered: ['THE COMPANY invests $530 million in a self-driving vehicle startup, aiming to enhance its delivery capabilities and reduce costs, which could significantly impact its logistics efficiency and overall profitability.', "THE COMPANY's CEO accuses a media outlet of blackmail, raising concerns about potential distractions from business operations and investor confidence, which may affect stock performance.", 'A new ETF includes THE COMPANY among its top holdings, indicating strong investor interest and potential for increased stock demand, which could positively influence its market valuation.', 'The launch of autonomous delivery robots by THE COMPANY highlights its commitment to innovation in logistics, potentially leading to cost savings and improved delivery times, which could enhance customer satisfaction and revenue.', "Analysts express concerns over THE COMPANY's stock performance following weak first-quarter sales guidance despite strong fourth-quarter results, indicating potential volatility in its stock price."]
+
+=== Performance Metrics ===
+
++--------------------------------+-----------+
+| Metric                         |     Value |
++================================+===========+
+| Sharpe Ratio (Annualized SR)   | 3.38176   |
++--------------------------------+-----------+
+| Portfolio Turnover (PTR)       | 0         |
++--------------------------------+-----------+
+| Maximum Drawdown (MDD)         | 0.0444523 |
++--------------------------------+-----------+
+| Mean Drawdown Duration (MDDur) | 4.5       |
++--------------------------------+-----------+
+| Cumulative Returns             | 0.0694494 |
++--------------------------------+-----------+
+
+=== LLM Decision Insights ===
+
++-------------------------+----------------+
+| LLM Decision Insights   |          Value |
++=========================+================+
+| Long Probability        |    0.65        |
++-------------------------+----------------+
+| Short Probability       |    0.35        |
++-------------------------+----------------+
+| Long Token Strategy     |   -0.269551    |
++-------------------------+----------------+
+| Short Token Strategy    | -inf           |
++-------------------------+----------------+
+| Long Token Probability  |   -0.000430788 |
++-------------------------+----------------+
+| Short Token Probability | -inf           |
++-------------------------+----------------+
+| Perplexity              |    5.8555e+26  |
++-------------------------+----------------+
+
+=== Token Usage & Cost Analysis for Ensemble ===
+
++----------------------------------+-----------+
+| Token Metrics                    | Value     |
++==================================+===========+
+| Prompt Tokens (Strategist)       | 3293      |
++----------------------------------+-----------+
+| Completion Tokens (Strategist)   | 329       |
++----------------------------------+-----------+
+| Prompt Tokens (Judge)            | 1566      |
++----------------------------------+-----------+
+| Completion Tokens (Judge)        | 22        |
++----------------------------------+-----------+
+| Prompt Tokens (News Analyst)     | 29686     |
++----------------------------------+-----------+
+| Completion Tokens (News Analyst) | 168       |
++----------------------------------+-----------+
+| Total Prompt Tokens              | 34545     |
++----------------------------------+-----------+
+| Total Completion Tokens          | 519       |
++----------------------------------+-----------+
+| Total Tokens                     | 35064     |
++----------------------------------+-----------+
+| Input Cost (USD)                 | $0.005182 |
++----------------------------------+-----------+
+| Output Cost (USD)                | $0.000311 |
++----------------------------------+-----------+
+| Total Cost (USD)                 | $0.005493 |
++----------------------------------+-----------+
