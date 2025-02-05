@@ -216,13 +216,13 @@ only
 ## Historic 1 Year Data {#historic-1-year-data .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//TSLA_M_gpt-4o-mini//2019-05-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews//TSLA_M_gpt-4o-mini/2019-05-05/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-05/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-05/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-05/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news .unnumbered}
 
@@ -340,10 +340,10 @@ Market Impact Score: 4/5
   Cumulative Returns                0.294539
 
 ![Price after LLM's
-decision](judge_reviews//TSLA_M_gpt-4o-mini//2019-05-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews//TSLA_M_gpt-4o-mini/2019-05-05/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/TSLA_M_gpt-4o-mini/2019-05-05/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -356,13 +356,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-1 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-07/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-07/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-07/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-07/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-1 .unnumbered}
 
@@ -476,10 +476,10 @@ but manageable risk - Market Impact Score: 3/5
   Cumulative Returns                0.0484561
 
 ![Price after LLM's
-decision](judge_reviews//AAPL_M_gpt-4o-mini//2019-04-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews//AAPL_M_gpt-4o-mini/2019-04-07/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/AAPL_M_gpt-4o-mini/2019-04-07/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -494,13 +494,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-2 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//GOOGL_M_gpt-4o-mini//2019-11-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews//GOOGL_M_gpt-4o-mini/2019-11-04/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-04/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-04/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-04/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-2 .unnumbered}
 
@@ -623,10 +623,10 @@ Analyst upgrades suggest bullish outlook - Market Impact Score: 4/5
   Cumulative Returns                -0.00201332
 
 ![Price after LLM's
-decision](judge_reviews//GOOGL_M_gpt-4o-mini//2019-11-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews//GOOGL_M_gpt-4o-mini/2019-11-04/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/GOOGL_M_gpt-4o-mini/2019-11-04/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -639,13 +639,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-3 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//TSLA_M_gpt-4o-mini//2019-11-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews//TSLA_M_gpt-4o-mini/2019-11-04/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-3 .unnumbered}
 
@@ -751,10 +751,10 @@ production efficiency - Market Impact Score: 4/5
   Cumulative Returns                0.0553191
 
 ![Price after LLM's
-decision](judge_reviews//TSLA_M_gpt-4o-mini//2019-11-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews//TSLA_M_gpt-4o-mini//2019-11-04/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -767,13 +767,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-4 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//AMZN_M_gpt-4o-mini//2018-09-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews//AMZN_M_gpt-4o-mini/2018-09-03/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-4 .unnumbered}
 
@@ -895,10 +895,10 @@ competitiveness - Market Impact Score: 3/5
   Cumulative Returns                -0.0334379
 
 ![Price after LLM's
-decision](judge_reviews//AMZN_M_gpt-4o-mini//2018-09-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews//AMZN_M_gpt-4o-mini/2018-09-03/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -911,13 +911,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-5 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-5 .unnumbered}
 
@@ -1032,10 +1032,10 @@ flagship product demand - Market Impact Score: 3/5
   Cumulative Returns                0.0195753
 
 ![Price after LLM's
-decision](judge_reviews/MSFT_M_gpt-4o-mini//2015-11-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -1048,13 +1048,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-6 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 3 Month News {#historic-3-month-news .unnumbered}
 
@@ -1186,10 +1186,10 @@ retail dominance - Market Impact Score: 3
   Cumulative Returns                0.0809082
 
 ![Price after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini//2015-11-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -1202,13 +1202,13 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-7 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews/GOOGL_M_gpt-4o-mini//2017-01-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews/GOOGL_M_gpt-4o-mini//2017-01-02/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-6 .unnumbered}
 
@@ -1327,10 +1327,10 @@ growth - Market Impact Score: 3/5
   Cumulative Returns                0.0128745
 
 ![Price after LLM's
-decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -1346,13 +1346,13 @@ enabled.
 ## Historic 1 Year Data {#historic-1-year-data-8 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-7 .unnumbered}
 
@@ -1448,10 +1448,10 @@ Score: 3/5
   Cumulative Returns                0.116297
 
 ![Price after LLM's
-decision](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
@@ -1467,13 +1467,13 @@ and the evaluator were disabled.
 ## Historic 1 Year Data {#historic-1-year-data-9 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//META_M_gpt-4o-mini//2016-01-01/judge_Price_with_Technical_Indicators.png){width="100%"}
+Technicals](judge_reviews//META_M_gpt-4o-mini/2016-01-04/judge_Price_with_Technical_Indicators.png){width="100%"}
 
-![Options](judge_reviews/META_M_gpt-4o-mini/2016-01-01/judge_Option_Implied_Volatility.png){width="100%"}
+![Options](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Option_Implied_Volatility.png){width="100%"}
 
-![Macroeconomic](judge_reviews/META_M_gpt-4o-mini/2016-01-01/judge_Macroeconomic_Indicators.png){width="100%"}
+![Macroeconomic](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Macroeconomic_Indicators.png){width="100%"}
 
-![Fundamentals](judge_reviews/META_M_gpt-4o-mini/2016-01-01/judge_Fundamental_Indicators.png){width="100%"}
+![Fundamentals](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Fundamental_Indicators.png){width="100%"}
 
 ## Historic 1 Month News {#historic-1-month-news-8 .unnumbered}
 
@@ -1540,10 +1540,10 @@ The evaluator agent was disabled, these insights are not precise.
   Cumulative Returns                0.0222242
 
 ![Price after LLM's
-decision](judge_reviews/META_M_gpt-4o-mini//2016-01-01/llm_Price_with_Technical_Indicators.png){width="100%"}
+decision](judge_reviews/META_M_gpt-4o-mini/2016-01-04/llm_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Volatility after LLM's
-decision](judge_reviews/META_M_gpt-4o-mini/2016-01-01/llm_Market_Volatility_&_Beta.png){width="100%"}
+decision](judge_reviews/META_M_gpt-4o-mini/2016-01-04/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
