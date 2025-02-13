@@ -639,278 +639,6 @@ If applicable, provide *examples* to correct the strategy.
 ## Historic 1 Year Data {#historic-1-year-data-3 .unnumbered}
 
 ![Price and
-Technicals](judge_reviews//TSLA_M_gpt-4o-mini/2019-11-04/judge_Price_with_Technical_Indicators.png){width="100%"}
-
-![Options](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Option_Implied_Volatility.png){width="100%"}
-
-![Macroeconomic](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Macroeconomic_Indicators.png){width="100%"}
-
-![Fundamentals](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/judge_Fundamental_Indicators.png){width="100%"}
-
-## Historic 1 Month News {#historic-1-month-news-3 .unnumbered}
-
-**Earnings Report Surpasses Expectations** THE COMPANY reported earnings
-significantly above market expectations, with stronger-than-anticipated
-revenue and profitability. Analysts had projected a loss, but THE
-COMPANY's financials demonstrated resilience, driven by improved
-operational efficiency and cost management.
-
-**Strategic Partnership to Enhance Product Offerings** THE COMPANY
-announced a strategic collaboration with a major technology firm to
-enhance its next-generation product capabilities. This move is expected
-to improve market competitiveness and expand offerings, reinforcing its
-position in the industry.
-
-**Market Confidence Boosted by Analyst Upgrades** Several analysts
-revised their ratings upward for THE COMPANY, citing strong future
-growth prospects and improving financial stability. Investor sentiment
-turned more positive following these upgrades, leading to increased
-stock momentum.
-
-**Macroeconomic Factors Favoring THE COMPANY** Economic indicators,
-including GDP growth and declining treasury yields, have contributed to
-a favorable market environment for THE COMPANY. These factors have led
-to increased investor confidence in high-growth stocks, benefiting THE
-COMPANY's valuation.
-
-**Competitive Market Pressures Intensify** A major competitor introduced
-a new product line, intensifying competition within the sector. While
-this development poses challenges, THE COMPANY's recent strategic
-initiatives and product advancements are expected to mitigate the
-competitive impact.
-
-::: tcolorbox
-Guess the action to take: *LONG* or *SHORT*.
-
-Write a 1-2 sentence *explanation* on why you decided the action above.
-:::
-
-**NEXT PAGE**: Model's Decision and Rationale.
-
-## LLMs' Strategy {#strategy4 .unnumbered}
-
-The traded instrument was TSLA, with the trading period set between
-2019-11-04 and 2019-12-02.
-
-**LLMs' decision: *LONG***
-
-**Rationale**: The decision to pursue a LONG strategy is supported by
-multiple factors indicating bullish momentum and favorable market
-conditions. Key features include:
-
-**Stock_Data.Price.Close**: The current price of 16.21 is above the 20MA
-(15.96) and the 50MA (15.50), suggesting positive momentum.
-
-**Technical_Analysis.RSI.Value**: With an RSI of 55, the stock indicates
-potential for further upside as it approaches overbought territory
-(\>70).
-
-**Options_Data.Atm_IV_Skews**: The ATM IV skew shows stability, which
-coupled with high implied volatility suggests readiness to capitalize on
-upward price movement.
-
-**Growth Metrics (EPS YoY)**: Although EPS YoY is negative at -16%,
-recent news suggests expected recovery due to new product demand and
-operational efficiencies from new facilities.
-
-**Macro_Data.SPX.Close_Slope**: The SPX close slope indicates a slight
-bearish trend; however, VIX trends are showing reduced fear in the
-market, supporting risk-on behavior.
-
-**Key news impacting this strategy**:
-
-Positive delivery statistics reported by THE COMPANY indicate a rebound
-in sales - Market Impact Score: 5/5
-
-Analysts raise price targets citing anticipated revenue growth - Market
-Impact Score: 4/5
-
-THE COMPANY announces plans for a new Gigafactory in Berlin, enhancing
-production efficiency - Market Impact Score: 4/5
-
-**LLM Decision Insights**
-
-  **LLM Decision Insights**     **Value**
-  --------------------------- -------------
-  Long Probability                0.75
-  Short Probability               0.25
-  Perplexity                   8.61386e+12
-  Total Tokens                    21937
-  Total Cost (USD)             \$0.003532
-
-## Following Month Data {#following-month-data-3 .unnumbered}
-
-**Performance Metrics**
-
-  **Metric**                        **Value**
-  -------------------------------- -----------
-  Sharpe Ratio (Annualized SR)       2.18892
-  Portfolio Turnover (PTR)              0
-  Maximum Drawdown (MDD)            0.0851064
-  Mean Drawdown Duration (MDDur)     3.63636
-  Cumulative Returns                0.0553191
-
-![Price after LLM's
-decision](judge_reviews//TSLA_M_gpt-4o-mini//2019-11-04/llm_Price_with_Technical_Indicators.png){width="100%"}
-
-![Volatility after LLM's
-decision](judge_reviews/TSLA_M_gpt-4o-mini/2019-11-04/llm_Market_Volatility_&_Beta.png){width="100%"}
-
-::: tcolorbox
-Fill in the Expert Scoring *rubric*.
-
-If applicable, provide *examples* to correct the strategy.
-:::
-
-# LLM Strategy 5 {#app:s5 .unnumbered}
-
-## Historic 1 Year Data {#historic-1-year-data-4 .unnumbered}
-
-![Price and
-Technicals](judge_reviews//AMZN_M_gpt-4o-mini/2018-09-03/judge_Price_with_Technical_Indicators.png){width="100%"}
-
-![Options](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Option_Implied_Volatility.png){width="100%"}
-
-![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Macroeconomic_Indicators.png){width="100%"}
-
-![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/judge_Fundamental_Indicators.png){width="100%"}
-
-## Historic 1 Month News {#historic-1-month-news-4 .unnumbered}
-
-**Retail Sector Volatility and THE COMPANY's Market Position** Amid
-ongoing shifts in the retail landscape, THE COMPANY has faced increasing
-competitive pressure from digital retailers, leading to significant
-fluctuations in stock performance. Recent industry-wide movements have
-shown that investors are using THE COMPANY as a key indicator for
-traditional retail stability. Analysts suggest that continued adaptation
-to e-commerce trends will be crucial for THE COMPANY's future growth.
-
-**Strategic Expansion into Direct-to-Consumer Sales** THE COMPANY has
-strengthened its focus on direct-to-consumer sales, enhancing its online
-platform and reducing reliance on third-party distribution. This shift
-has resulted in improved margins and greater control over customer
-engagement. Analysts believe that this strategy could protect THE
-COMPANY from broader market shifts while ensuring sustained revenue
-growth.
-
-**Executive Leadership Changes and Market Reactions** THE COMPANY
-announced key executive leadership changes, appointing a new senior
-figure to lead innovation and digital transformation efforts. The market
-reacted positively to the appointment, with investors expressing
-confidence in the company's renewed focus on operational efficiency and
-strategic growth.
-
-**Increased Competition in Key Market Segments** Recent reports indicate
-that THE COMPANY is facing heightened competition in one of its core
-market segments, with rival firms aggressively expanding their
-offerings. Analysts predict that maintaining brand strength and customer
-loyalty will be critical to counteracting these competitive threats.
-
-**Analyst Upgrades Amid Optimistic Growth Projections** Several analysts
-have revised their outlook on THE COMPANY, citing improvements in
-product innovation, operational efficiency, and supply chain management.
-The stock price saw an upward movement following the revised
-projections, reflecting renewed investor confidence in the company's
-long-term strategy.
-
-::: tcolorbox
-Guess the action to take: *LONG* or *SHORT*.
-
-Write a 1-2 sentence *explanation* on why you decided the action above.
-:::
-
-**NEXT PAGE**: Model's Decision and Rationale.
-
-## LLMs' Strategy {#strategy5 .unnumbered}
-
-The traded instrument was AMZN, with the trading period set between
-2018-09-03 and 2019-10-01.
-
-**LLMs' decision: *LONG***
-
-**Rationale**: The analysis supports a LONG position based on several
-compelling indicators. Firstly, the stock is currently trading above its
-20MA (90.00) and 50MA (86.47), signaling positive momentum with a recent
-close at 91.72, indicating strength in price action. Secondly, the RSI
-value of 60.43 suggests that while the stock is not overbought yet, it
-is trending positively which could indicate further upside potential.
-
-Thirdly, despite some mixed analyst views regarding valuation and
-short-term volatility due to trade tensions and tariffs, there are also
-positive indicators such as analyst upgrades for THE COMPANY's stock
-target suggesting expected growth, which impacts sentiment positively.
-
-From a fundamental perspective, EPS YoY growth of approximately 8.67%
-indicates solid profitability trends, even though free cash flow has
-seen negative movement (-5.60%), showing resilience in earnings
-generation under pressure.
-
-Lastly, macro data showing SPX closing slope $>$ 0 and VIX slope $<$ 0
-indicate bullish market sentiment overall, further reinforcing our
-decision.
-
-**Top weighted features influencing this decision**:
-
-Stock_Data.Price.Close (91.72)
-
-Technical_Analysis.RSI.Value (60.43)
-
-Fundamental_Data.Growth_Metrics.EPS_YoY (8.67%)
-
-Moving_Averages.50MA (86.47)
-
-Macro_Data.Market_Sentiment (Bullish)
-
-**Key news impacting this strategy**:
-
-THE COMPANY reached a \$1 trillion market cap post-Prime Day, boosting
-sales - Market Impact Score: 5/5
-
-Analyst upgrades suggest continued growth expectations - Market Impact
-Score: 4/5
-
-Launch of a new machine learning shopping platform enhances
-competitiveness - Market Impact Score: 3/5
-
-**LLM Decision Insights**
-
-  **LLM Decision Insights**     **Value**
-  --------------------------- -------------
-  Long Probability                0.75
-  Short Probability               0.25
-  Perplexity                   2.38182e+29
-  Total Tokens                    46337
-  Total Cost (USD)             \$0.007181
-
-## Following Month Data {#following-month-data-4 .unnumbered}
-
-**Performance Metrics**
-
-  **Metric**                        **Value**
-  -------------------------------- ------------
-  Sharpe Ratio (Annualized SR)       -1.70178
-  Portfolio Turnover (PTR)              0
-  Maximum Drawdown (MDD)            0.0645225
-  Mean Drawdown Duration (MDDur)       10.5
-  Cumulative Returns                -0.0334379
-
-![Price after LLM's
-decision](judge_reviews//AMZN_M_gpt-4o-mini/2018-09-03/llm_Price_with_Technical_Indicators.png){width="100%"}
-
-![Volatility after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini/2018-09-03/llm_Market_Volatility_&_Beta.png){width="100%"}
-
-::: tcolorbox
-Fill in the Expert Scoring *rubric*.
-
-If applicable, provide *examples* to correct the strategy.
-:::
-
-# LLM Strategy 6 {#app:s6 .unnumbered}
-
-## Historic 1 Year Data {#historic-1-year-data-5 .unnumbered}
-
-![Price and
 Technicals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Price_with_Technical_Indicators.png){width="100%"}
 
 ![Options](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Option_Implied_Volatility.png){width="100%"}
@@ -919,7 +647,7 @@ Technicals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Price_with_Technic
 
 ![Fundamentals](judge_reviews/MSFT_M_gpt-4o-mini/2015-11-02/judge_Fundamental_Indicators.png){width="100%"}
 
-## Historic 1 Month News {#historic-1-month-news-5 .unnumbered}
+## Historic 1 Month News {#historic-1-month-news-3 .unnumbered}
 
 **Unusual Options Activity and Market Speculation** Options traders
 exhibited significant bullish sentiment toward THE COMPANY, with heavy
@@ -1019,7 +747,7 @@ flagship product demand - Market Impact Score: 3/5
   Total Tokens                   17744
   Total Cost (USD)             \$0.002885
 
-## Following Month Data {#following-month-data-5 .unnumbered}
+## Following Month Data {#following-month-data-3 .unnumbered}
 
 **Performance Metrics**
 
@@ -1043,163 +771,9 @@ Fill in the Expert Scoring *rubric*.
 If applicable, provide *examples* to correct the strategy.
 :::
 
-# LLM Strategy 7 {#app:s7 .unnumbered}
+# LLM Strategy 5 {#app:s5 .unnumbered}
 
-## Historic 1 Year Data {#historic-1-year-data-6 .unnumbered}
-
-![Price and
-Technicals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Price_with_Technical_Indicators.png){width="100%"}
-
-![Options](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Option_Implied_Volatility.png){width="100%"}
-
-![Macroeconomic](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Macroeconomic_Indicators.png){width="100%"}
-
-![Fundamentals](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/judge_Fundamental_Indicators.png){width="100%"}
-
-## Historic 3 Month News {#historic-3-month-news .unnumbered}
-
-**Strong Financial Performance & Earnings Beat** THE COMPANY reported a
-significant earnings beat, posting revenue and profit figures well above
-analysts' expectations. The surprise profitability fueled a sharp
-increase in THE COMPANY's stock price, surging over 10% in after-hours
-trading. Investors reacted positively to the strong growth across
-multiple segments, particularly in cloud services and digital media.
-
-**Work Culture Controversy & Public Backlash** A major publication
-released an investigative report criticizing THE COMPANY's workplace
-culture, citing allegations of excessive pressure, harsh management
-practices, and unfair treatment of employees. THE COMPANY's top
-executives, including THE VP, issued a strong rebuttal, claiming the
-report was misleading and lacked journalistic standards. While the news
-initially weighed on investor sentiment, the company's stock remained
-resilient amid continued business growth.
-
-**Expansion in Logistics & Delivery Services** THE COMPANY announced the
-expansion of its same-day delivery service to multiple metropolitan
-areas, increasing its footprint in the logistics space. The move was
-seen as a direct challenge to traditional courier services and
-positioned THE COMPANY as a dominant force in e-commerce fulfillment.
-Analysts viewed the expansion favorably, citing enhanced customer
-experience and potential cost efficiencies.
-
-**Major Hiring Initiative for Seasonal Workforce** Ahead of the holiday
-season, THE COMPANY revealed plans to hire over 100,000 temporary
-workers to meet rising demand. The announcement signaled confidence in
-consumer spending and THE COMPANY's ability to handle peak shopping
-periods. Market reaction was positive, with analysts expecting a strong
-quarter driven by increased retail sales.
-
-**Regulatory Scrutiny Over Tax Practices** THE COMPANY faced renewed
-scrutiny from regulatory bodies regarding its tax structure and alleged
-use of offshore subsidiaries to minimize tax obligations. While no
-immediate penalties were imposed, the heightened regulatory attention
-created some uncertainty for investors. However, the stock showed
-limited reaction as the broader market remained focused on the company's
-robust growth prospects.
-
-**TASKS**:
-
-::: tcolorbox
-Guess the action to take: *LONG* or *SHORT*.
-
-Write a 1-2 sentence *explanation* on why you decided the action above.
-:::
-
-## LLMs' Strategy {#strategy7 .unnumbered}
-
-The traded instrument was AMZN, with the trading period set between
-2015-11-02 and 2015-11-30.
-
-**LLMs' decision: *LONG***
-
-**Rationale**: The analysis indicates a bullish sentiment for the stock
-based on several key factors.
-
-1\) **Technical Analysis**: The current price of 26.63 is above both the
-20MA (26.20) and 50MA (26.07), indicating strong upward momentum. The
-RSI value at 55 suggests that the stock is neither overbought nor
-oversold, supporting potential further upside.
-
-2\) **Stock Performance**: Recent weekly returns show significant
-volatility with a cumulative return of approximately 1% in recent weeks,
-suggesting positive market interest and possible trend sustainability.
-
-3\) **News Factors**: Analysts have raised their price target for the
-company due to underappreciated growth potential in its cloud services
-(Market Impact Score: 5). Additionally, early Black Friday deals
-announced by executives could significantly enhance sales (Score: 4).
-Lastly, the launch of brick-and-mortar stores leveraging online data can
-improve customer engagement (Score: 3). These news factors collectively
-support a bullish stance as they highlight strong growth narratives
-around profitability and revenue generation prospects amidst favorable
-technical indicators.
-
-**Top weighted features influencing this decision**:
-
-Stock_Data.Price.Close (26.63)
-
-Technical_Analysis.RSI.Value (55)
-
-Technical_Analysis.20MA (26.20)
-
-Technical_Analysis.50MA (26.07)
-
-Fundamental_Data.Growth_Metrics.Revenue_YoY (+21%)
-
-**Key news impacting this strategy**:
-
-Official launch of first brick-and-mortar store leveraging online data
-for inventory - Market Impact Score: 3
-
-Analysts predict significant disruption in IT market due to cloud
-services growth - Market Impact Score: 5
-
-Announcement of extensive Black Friday deals with early access for
-premium members - Market Impact Score: 4
-
-Price target increase by major investment bank citing strong cloud
-division outlook - Market Impact Score: 5
-
-Major retailer transitions online store to THE COMPANY, reinforcing
-retail dominance - Market Impact Score: 3
-
-**LLM Decision Insights**
-
-  **LLM Decision Insights**    **Value**
-  --------------------------- ------------
-  Long Probability                0.75
-  Short Probability               0.25
-  Perplexity                    1.92457
-  Total Tokens                   68462
-  Total Cost (USD)             \$0.010503
-
-## Following Month Data {#following-month-data-6 .unnumbered}
-
-**Performance Metrics**
-
-  **Metric**                        **Value**
-  -------------------------------- -----------
-  Sharpe Ratio (Annualized SR)       3.76259
-  Portfolio Turnover (PTR)              0
-  Maximum Drawdown (MDD)            0.0457516
-  Mean Drawdown Duration (MDDur)     3.57143
-  Cumulative Returns                0.0809082
-
-![Price after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/llm_Price_with_Technical_Indicators.png){width="100%"}
-
-![Volatility after LLM's
-decision](judge_reviews/AMZN_M_gpt-4o-mini/2015-11-02/llm_Market_Volatility_&_Beta.png){width="100%"}
-
-::: tcolorbox
-Fill in the Expert Scoring *rubric*.
-
-If applicable, provide *examples* to correct the strategy.
-:::
-
-# LLM Strategy 8 {#app:s8 .unnumbered}
-
-## Historic 1 Year Data {#historic-1-year-data-7 .unnumbered}
+## Historic 1 Year Data {#historic-1-year-data-4 .unnumbered}
 
 ![Price and
 Technicals](judge_reviews/GOOGL_M_gpt-4o-mini//2017-01-02/judge_Price_with_Technical_Indicators.png){width="100%"}
@@ -1210,7 +784,7 @@ Technicals](judge_reviews/GOOGL_M_gpt-4o-mini//2017-01-02/judge_Price_with_Techn
 
 ![Fundamentals](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/judge_Fundamental_Indicators.png){width="100%"}
 
-## Historic 1 Month News {#historic-1-month-news-6 .unnumbered}
+## Historic 1 Month News {#historic-1-month-news-4 .unnumbered}
 
 **Tech Summit Participation and Market Sentiment** THE COMPANY's
 participation in a high-profile technology summit hosted by government
@@ -1314,7 +888,7 @@ growth - Market Impact Score: 3/5
   Total Tokens                   13112
   Total Cost (USD)             \$0.002181
 
-## Following Month Data {#following-month-data-7 .unnumbered}
+## Following Month Data {#following-month-data-4 .unnumbered}
 
 **Performance Metrics**
 
@@ -1338,12 +912,12 @@ Fill in the Expert Scoring *rubric*.
 If applicable, provide *examples* to correct the strategy.
 :::
 
-# LLM Strategy 9 - No News Analyst Agent {#app:s9 .unnumbered}
+# LLM Strategy 6 - No News {#app:s6 .unnumbered}
 
 In this ensemble, only the strategist and the evaluator agents were
 enabled.
 
-## Historic 1 Year Data {#historic-1-year-data-8 .unnumbered}
+## Historic 1 Year Data {#historic-1-year-data-5 .unnumbered}
 
 ![Price and
 Technicals](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/judge_Price_with_Technical_Indicators.png){width="100%"}
@@ -1354,7 +928,7 @@ Technicals](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/judge_Price_with_Techni
 
 ![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Fundamental_Indicators.png){width="100%"}
 
-## Historic 1 Month News {#historic-1-month-news-7 .unnumbered}
+## Historic 1 Month News {#historic-1-month-news-5 .unnumbered}
 
 The News Analyst agent was disabled for this sample.
 
@@ -1435,7 +1009,7 @@ Score: 3/5
   Total Tokens                    63630
   Total Cost (USD)             \$0.009766
 
-## Following Month Data {#following-month-data-8 .unnumbered}
+## Following Month Data {#following-month-data-5 .unnumbered}
 
 **Performance Metrics**
 
@@ -1452,98 +1026,6 @@ decision](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/llm_Price_with_Technical_
 
 ![Volatility after LLM's
 decision](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/llm_Market_Volatility_&_Beta.png){width="100%"}
-
-::: tcolorbox
-Fill in the Expert Scoring *rubric*.
-
-If applicable, provide *examples* to correct the strategy.
-:::
-
-# LLM Strategy 10 {#app:s10 .unnumbered}
-
-In this ensemble, only the strategist agent is active, the news analyst
-and the evaluator were disabled.
-
-## Historic 1 Year Data {#historic-1-year-data-9 .unnumbered}
-
-![Price and
-Technicals](judge_reviews//META_M_gpt-4o-mini/2016-01-04/judge_Price_with_Technical_Indicators.png){width="100%"}
-
-![Options](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Option_Implied_Volatility.png){width="100%"}
-
-![Macroeconomic](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Macroeconomic_Indicators.png){width="100%"}
-
-![Fundamentals](judge_reviews/META_M_gpt-4o-mini/2016-01-04/judge_Fundamental_Indicators.png){width="100%"}
-
-## Historic 1 Month News {#historic-1-month-news-8 .unnumbered}
-
-The News Analyst agent was disabled for this sample.
-
-::: tcolorbox
-Guess the action to take: *LONG* or *SHORT*.
-
-Write a 1-2 sentence *explanation* on why you decided the action above.
-:::
-
-**NEXT PAGE**: Model's Decision and Rationale.
-
-## LLMs' Strategy {#strategy10 .unnumbered}
-
-The traded instrument was META, with the trading period set between
-2016-01-04 and 2016-02-01.
-
-**LLMs' decision: *SHORT***
-
-**Rationale**: The stock exhibits several red flags indicating a
-potential decline. Firstly, the negative EBIT Margin (-0.1333) and
-Negative Net Profit Margin (-0.1278) suggest that the company is
-currently operating at a loss, which can deter investors and decrease
-demand for shares.
-
-Additionally, the Current Ratio (0.1962) and Quick Ratio (0.0) indicate
-severe liquidity issues, implying that the company may struggle to cover
-its short-term liabilities, further increasing financial risk.
-
-From a technical perspective, both RSI values (35.94), which is below 40
-suggests weak momentum while MACD shows bearish signals with a drop in
-strength over recent periods (-0.0248). The stock price has also been
-trading well below its moving averages: 20MA (approx 269), 50MA (approx
-334), suggesting downward pressure on price action.
-
-Given these factors coupled with high volatility indicated by ATR of
-approximately 0.0225 points towards potential price swings unfavorable
-to long positions; thus establishing a short position could be
-beneficial in capturing downside movement over the next month.
-
-**LLM Decision Insights**
-
-The evaluator agent was disabled, these insights are not precise.
-
-  **LLM Decision Insights**     **Value**
-  --------------------------- -------------
-  Long Probability                 0.4
-  Short Probability                0.6
-  Perplexity                   5.21024e+14
-  Total Tokens                    2625
-  Total Cost (USD)             \$0.000540
-
-## Following Month Data {#following-month-data-9 .unnumbered}
-
-**Performance Metrics**
-
-  **Metric**                        **Value**
-  -------------------------------- -----------
-  Sharpe Ratio (Annualized SR)       0.98081
-  Portfolio Turnover (PTR)              0
-  Maximum Drawdown (MDD)            0.329518
-  Mean Drawdown Duration (MDDur)     8.05882
-  Cumulative Returns                0.0222242
-
-![Price after LLM's
-decision](judge_reviews/META_M_gpt-4o-mini/2016-01-04/llm_Price_with_Technical_Indicators.png){width="100%"}
-
-![Volatility after LLM's
-decision](judge_reviews/META_M_gpt-4o-mini/2016-01-04/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.
