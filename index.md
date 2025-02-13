@@ -691,7 +691,7 @@ Guess the action to take: *LONG* or *SHORT*.
 Write a 1-2 sentence *explanation* on why you decided the action above.
 :::
 
-## LLMs' Strategy {#strategy6 .unnumbered}
+## LLMs' Strategy {#strategy4 .unnumbered}
 
 The traded instrument was MSFT, with the trading period set between
 2015-11-02 and 2015-11-30.
@@ -827,7 +827,7 @@ warned that growing public and governmental scrutiny could lead to
 stricter policies, impacting THE COMPANY's ability to leverage data for
 competitive advantage.
 
-## LLMs' Strategy {#strategy8 .unnumbered}
+## LLMs' Strategy {#strategy5 .unnumbered}
 
 The traded instrument was GOOGL, with the trading period set between
 2017-01-02 and 2017-01-30.
@@ -940,7 +940,7 @@ Write a 1-2 sentence *explanation* on why you decided the action above.
 
 **NEXT PAGE**: Model's Decision and Rationale.
 
-## LLMs' Strategy {#strategy9 .unnumbered}
+## LLMs' Strategy {#strategy6 .unnumbered}
 
 The traded instrument was AAPL, with the trading period set in between
 2015-01-05 and 2015-02-02.
