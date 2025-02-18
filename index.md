@@ -28,6 +28,30 @@ the results will be shared.
 
 # Review Instructions
 
+Thank you for participating in this research study. Your insights are
+valuable in evaluating the integration of Large Language Models (LLMs)
+with Deep Reinforcement Learning (DRL) for quantitative trading.
+
+## Consent
+
+By proceeding with this survey, you consent to the use of your responses
+in this research study. Your email will only be used to limit one set of
+answers per reviewer and to share results. It will be deleted at the end
+of the research.
+
+## Acknowledgment
+
+If you wish to be acknowledged in the research publications *\"Language
+Model Guided Reinforcement Learning in Quantitative Trading\"*, please
+provide your name, surname, and affiliation.
+
+## Access to Results
+
+Upon completion of the research, results will be shared with all
+consenting participants. If you would like to receive these results,
+ensure your email is provided. Your email will only be used for this
+purpose and will be deleted after the results are shared.
+
 ## Step 1: Problem Definition
 
 You will be provided with one year of historical market data, the data
@@ -905,127 +929,6 @@ decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/llm_Price_with_Technical_
 
 ![Volatility after LLM's
 decision](judge_reviews/GOOGL_M_gpt-4o-mini/2017-01-02/llm_Market_Volatility_&_Beta.png){width="100%"}
-
-::: tcolorbox
-Fill in the Expert Scoring *rubric*.
-
-If applicable, provide *examples* to correct the strategy.
-:::
-
-# LLM Strategy 6 - No News {#app:s6 .unnumbered}
-
-In this ensemble, only the strategist and the evaluator agents were
-enabled.
-
-## Historic 1 Year Data {#historic-1-year-data-5 .unnumbered}
-
-![Price and
-Technicals](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/judge_Price_with_Technical_Indicators.png){width="100%"}
-
-![Options](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Option_Implied_Volatility.png){width="100%"}
-
-![Macroeconomic](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Macroeconomic_Indicators.png){width="100%"}
-
-![Fundamentals](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Fundamental_Indicators.png){width="100%"}
-
-## Historic 1 Month News {#historic-1-month-news-5 .unnumbered}
-
-The News Analyst agent was disabled for this sample.
-
-::: tcolorbox
-Guess the action to take: *LONG* or *SHORT*.
-
-Write a 1-2 sentence *explanation* on why you decided the action above.
-:::
-
-**NEXT PAGE**: Model's Decision and Rationale.
-
-## LLMs' Strategy {#strategy6 .unnumbered}
-
-The traded instrument was AAPL, with the trading period set in between
-2015-01-05 and 2015-02-02.
-
-**LLMs' decision: *LONG***
-
-**Rationale**: The decision to go LONG is supported by several
-compelling factors. Firstly, the stock's price at \$28.66 is above both
-the 20MA (\$28.41) and 50MA (\$26.63), indicating strong bullish
-momentum and a positive trend in price action. Additionally, the RSI at
-58 suggests that while not overbought, there is room for further upward
-movement without immediate correction risk.
-
-Moreover, recent news highlights record quarterly revenue growth of
-\$74.6 billion exceeding analyst expectations, which enhances investor
-confidence and positions the company favorably in the market (Market
-Impact Score: 5). The analysts' upgrades to their price targets
-reinforce this sentiment (Market Impact Score: 4). Furthermore, strong
-sales growth of 70% in China indicates robust demand and a significant
-opportunity for future revenue increases.
-
-From a technical perspective, despite some concerns about smartphone
-sales slowing down, overall growth metrics such as EPS YoY at
-approximately 48%, Free Cash Flow YoY at around 58%, alongside healthy
-margins (Gross Margin:  39%, Net Profit Margin:  24%), indicate solid
-profitability and sustainability.
-
-Additionally, macroeconomic indicators show positive trends with GDP QoQ
-up and PMI above neutral (53.7), suggesting economic expansion which
-typically supports equity performance.
-
-**Top weighted features influencing this decision**:
-
-Stock_Data.Price.Close (28.66)
-
-Technical_Analysis.20MA (28.41)
-
-Technical_Analysis.50MA (26.63)
-
-Fundamental_Data.Growth_Metrics.EPS_YoY (48%)
-
-Fundamental_Data.Growth_Metrics.Free_Cash_Flow_YoY (58%)
-
-**Key news impacting this strategy**:
-
-Record quarterly revenue of \$74.6 billion - Market Impact Score: 5/5
-
-Analysts raised price targets following strong earnings - Market Impact
-Score: 4/5
-
-Anticipated launch of Apple Watch as new revenue stream - Market Impact
-Score: 4/5
-
-Strong revenue growth in China (70%) - Market Impact Score: 4/5
-
-Concerns over potential slowing smartphone sales growth - Market Impact
-Score: 3/5
-
-**LLM Decision Insights**
-
-  **LLM Decision Insights**     **Value**
-  --------------------------- -------------
-  Long Probability                0.78
-  Short Probability               0.22
-  Perplexity                   5.89012e+15
-  Total Tokens                    63630
-  Total Cost (USD)             \$0.009766
-
-## Following Month Data {#following-month-data-5 .unnumbered}
-
-**Performance Metrics**
-
-  **Metric**                        **Value**
-  -------------------------------- -----------
-  Sharpe Ratio (Annualized SR)       4.17844
-  Portfolio Turnover (PTR)              0
-  Maximum Drawdown (MDD)            0.0535714
-  Mean Drawdown Duration (MDDur)     2.77778
-  Cumulative Returns                0.116297
-
-![Price after LLM's
-decision](judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/llm_Price_with_Technical_Indicators.png){width="100%"}
-
-![Volatility after LLM's
-decision](judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/llm_Market_Volatility_&_Beta.png){width="100%"}
 
 ::: tcolorbox
 Fill in the Expert Scoring *rubric*.

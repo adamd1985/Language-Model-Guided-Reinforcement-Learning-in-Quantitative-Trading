@@ -74,6 +74,20 @@ The findings from this evaluation will contribute to the paper: "Language Model 
 
 \section{Review Instructions}
 
+Thank you for participating in this research study. Your insights are valuable in evaluating the integration of Large Language Models (LLMs) with Deep Reinforcement Learning (DRL) for quantitative trading.
+
+\subsection{Consent}
+
+By proceeding with this survey, you consent to the use of your responses in this research study. Your email will only be used to limit one set of answers per reviewer and to share results. It will be deleted at the end of the research.
+
+\subsection{Acknowledgment}
+
+If you wish to be acknowledged in the research publications \textit{"Language Model Guided Reinforcement Learning in Quantitative Trading"}, please provide your name, surname, and affiliation.
+
+\subsection{Access to Results}
+
+Upon completion of the research, results will be shared with all consenting participants. If you would like to receive these results, ensure your email is provided. Your email will only be used for this purpose and will be deleted after the results are shared.
+
 \subsection{Step 1: Problem Definition}
 
 You will be provided with one year of historical market data, the data is anonymized to prevent bias due to prior knowledge of the financial instrument:
@@ -214,6 +228,14 @@ You will be filling the accompanying spreadsheet. This is for reference only
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|c|c|p{3.5cm}|c|c|c|p{3.5cm}|}
         \hline
+        \multicolumn{7}{|c|}{\textbf{Reviewer Information}} \\
+        \hline
+        \textbf{Email} & \multicolumn{2}{c|}{\textbf{Name}} & \multicolumn{2}{c|}{\textbf{Surname}} & \multicolumn{2}{c|}{\textbf{Affiliation}} \\
+        \hline
+        & \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{} \\
+        \hline
+        \multicolumn{7}{|c|}{\textbf{Expert Review Sheet}} \\
+        \hline
         \textbf{Sample ID} & \textbf{Expert's Guess} & \textbf{Expert's Rationale} & \textbf{Model Rationale (-1 to 1)} & \textbf{Model Fidelity (-1 to 1)} & \textbf{Model Safety (-1 to 1)} & \textbf{Expert's Exemplar} \\
         \hline
         1  &  &  &  &  &  &  \\
@@ -226,20 +248,11 @@ You will be filling the accompanying spreadsheet. This is for reference only
         \hline
         5  &  &  &  &  &  &  \\
         \hline
-        6  &  &  &  &  &  &  \\
-        \hline
-        7  &  &  &  &  &  &  \\
-        \hline
-        8  &  &  &  &  &  &  \\
-        \hline
-        9  &  &  &  &  &  &  \\
-        \hline
-        10 &  &  &  &  &  &  \\
-        \hline
     \end{tabular}
     }
-    \caption{Expert Review Sheet}
+    \caption{Expert Review Sheet with Reviewer Information}
 \end{table}
+
 
 \newpage
 
@@ -925,137 +938,5 @@ Cumulative Returns & 0.0128745 \\
 \end{enumerate}
 \end{tcolorbox}
 \newpage
-
-
-\section*{LLM Strategy 6 - No News}
-\label{app:s6}
-
-In this ensemble, only the strategist and the evaluator agents were enabled.
-
-\subsection*{Historic 1 Year Data}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/judge_Price_with_Technical_Indicators.png}
-    \caption{Price and Technicals}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Option_Implied_Volatility.png}
-    \caption{Options}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Macroeconomic_Indicators.png}
-    \caption{Macroeconomic}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/judge_Fundamental_Indicators.png}
-    \caption{Fundamentals}
-\end{figure}
-
-
-\subsection*{Historic 1 Month News}
-
-The News Analyst agent was disabled for this sample.
-
-\begin{tcolorbox}[colback=blue!10, colframe=blue!60, title=\textbf{TASKS}, sharp corners=southwest]
-\begin{enumerate}
-    \item Guess the action to take: \textit{LONG} or \textit{SHORT}.
-    \item Write a 1-2 sentence \textit{explanation} on why you decided the action above.
-\end{enumerate}
-\end{tcolorbox}
-
-\textbf{NEXT PAGE}: Model's Decision and Rationale.
-
-\newpage
-
-\subsection*{LLMs' Strategy} \label{strategy6}
-
-The traded instrument was AAPL, with the trading period set in between 2015-01-05 and 2015-02-02.
-
-\textbf{LLMs' decision: \textit{LONG}}
-
-\textbf{Rationale}: The decision to go LONG is supported by several compelling factors. Firstly, the stock's price at \$28.66 is above both the 20MA (\$28.41) and 50MA (\$26.63), indicating strong bullish momentum and a positive trend in price action. Additionally, the RSI at 58 suggests that while not overbought, there is room for further upward movement without immediate correction risk.
-
-Moreover, recent news highlights record quarterly revenue growth of \$74.6 billion exceeding analyst expectations, which enhances investor confidence and positions the company favorably in the market (Market Impact Score: 5). The analysts' upgrades to their price targets reinforce this sentiment (Market Impact Score: 4). Furthermore, strong sales growth of 70\% in China indicates robust demand and a significant opportunity for future revenue increases.
-
-From a technical perspective, despite some concerns about smartphone sales slowing down, overall growth metrics such as EPS YoY at approximately 48\%, Free Cash Flow YoY at around 58\%, alongside healthy margins (Gross Margin: ~39\%, Net Profit Margin: ~24\%), indicate solid profitability and sustainability.
-
-Additionally, macroeconomic indicators show positive trends with GDP QoQ up and PMI above neutral (53.7), suggesting economic expansion which typically supports equity performance.
-
-\textbf{Top weighted features influencing this decision}:
-\begin{enumerate}
-    \item Stock\_Data.Price.Close (28.66)
-    \item Technical\_Analysis.20MA (28.41)
-    \item Technical\_Analysis.50MA (26.63)
-    \item Fundamental\_Data.Growth\_Metrics.EPS\_YoY (48\%)
-    \item Fundamental\_Data.Growth\_Metrics.Free\_Cash\_Flow\_YoY (58\%)
-\end{enumerate}
-
-\textbf{Key news impacting this strategy}:
-\begin{enumerate}
-    \item Record quarterly revenue of \$74.6 billion - Market Impact Score: 5/5
-    \item Analysts raised price targets following strong earnings - Market Impact Score: 4/5
-    \item Anticipated launch of Apple Watch as new revenue stream - Market Impact Score: 4/5
-    \item Strong revenue growth in China (70\%) - Market Impact Score: 4/5
-    \item Concerns over potential slowing smartphone sales growth - Market Impact Score: 3/5
-\end{enumerate}
-
-\textbf{LLM Decision Insights}
-
-\begin{longtable}{l c}
-\toprule
-\textbf{LLM Decision Insights} & \textbf{Value} \\
-\midrule
-Long Probability & 0.78 \\
-Short Probability & 0.22 \\
-Perplexity & 5.89012e+15 \\
-\midrule
-Total Tokens & 63630 \\
-Total Cost (USD) & \$0.009766 \\
-\bottomrule
-\end{longtable}
-
-\subsection*{Following Month Data}
-
-\textbf{Performance Metrics}
-
-\begin{longtable}{l c}
-\toprule
-\textbf{Metric} & \textbf{Value} \\
-\midrule
-Sharpe Ratio (Annualized SR) & 4.17844 \\
-Portfolio Turnover (PTR) & 0 \\
-Maximum Drawdown (MDD) & 0.0535714 \\
-Mean Drawdown Duration (MDDur) & 2.77778 \\
-Cumulative Returns & 0.116297 \\
-\bottomrule
-\end{longtable}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini//2015-01-05/llm_Price_with_Technical_Indicators.png}
-    \caption{Price after LLM's decision}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{judge_reviews/AAPL_M_gpt-4o-mini/2015-01-05/llm_Market_Volatility_&_Beta.png}
-    \caption{Volatility after LLM's decision}
-\end{figure}
-
-\begin{tcolorbox}[colback=blue!10, colframe=blue!60, title=\textbf{TASKS}, sharp corners=southwest]
-\begin{enumerate}
-    \item Fill in the Expert Scoring \textit{rubric}.
-    \item If applicable, provide \textit{examples} to correct the strategy.
-\end{enumerate}
-\end{tcolorbox}
-\newpage
-
 
 \end{document}
