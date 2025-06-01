@@ -1,9 +1,11 @@
 User_Context:
   Features_Reranked:
-    {{ features_reranked_dict }}
+    {{ Features_Reranked }}
 
+  {% if judge_critique %}
   Judge_Feedback: |
     {{ judge_critique }}
+  {% endif %}
 
   risk_profile: "{{ risk_profile }}"
   portfolio_objectives: "{{ portfolio_objectives }}"
@@ -27,8 +29,10 @@ Deliver:
   instructions: |
     Develop a trading strategy for the next month using the provided financial, technical, macroeconomic, and options data. Your recommendation must align with the `portfolio_objectives` and `risk_profile` stated.
 
+    {% if judge_critique %}
     Based on Judge feedback:
     {{ judge_critique }}
+    {% endif %}
 
     Prioritize the following features (ranked by importance):
     {% for feature, weight in Features_Reranked.items() %}

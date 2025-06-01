@@ -167,7 +167,6 @@ dependencies:
   - opt_einsum=3.3.0=pyhd3eb1b0_1
   - orc=1.9.2=h4b38347_0
   - packaging=23.2=py310h06a4308_0
-  - pandas=2.2.0=py310hcc13569_0
   - parso=0.8.4=pyhd8ed1ab_0
   - patsy=0.5.6=pyhd8ed1ab_0
   - pexpect=4.9.0=pyhd8ed1ab_0
@@ -175,7 +174,6 @@ dependencies:
   - pillow=10.2.0=py310h01dd4db_0
   - pip=24.0=py310h06a4308_0
   - platformdirs=4.2.2=pyhd8ed1ab_0
-  - polars=1.17.1=py310hc556931_0
   - prompt-toolkit=3.0.42=pyha770c72_0
   - psutil=5.9.8=py310h2372a71_0
   - ptyprocess=0.7.0=pyhd3deb0d_0
@@ -207,7 +205,6 @@ dependencies:
   - rsa=4.7.2=pyhd3eb1b0_1
   - s2n=1.4.1=h06160fa_0
   - scikit-learn=1.4.0=py310h1fdf081_0
-  - scipy=1.12.0=py310heeff2f4_0
   - seaborn=0.13.2=hd8ed1ab_2
   - seaborn-base=0.13.2=pyhd8ed1ab_2
   - setuptools=69.5.1=py310h06a4308_0
@@ -247,8 +244,10 @@ dependencies:
       - anyio==4.6.2.post1
       - appdirs==1.4.4
       - backcall==0.2.0
+      - backoff==2.2.1
       - beautifulsoup4==4.12.3
       - bleach==6.1.0
+      - chardet==5.2.0
       - defusedxml==0.7.1
       - distro==1.9.0
       - dm-reverb==0.14.0
@@ -263,6 +262,7 @@ dependencies:
       - gym==0.23.0
       - gym-notices==0.0.8
       - h11==0.14.0
+      - html2text==2024.2.26
       - html5lib==1.1
       - httpcore==1.0.6
       - httpx==0.27.2
@@ -309,22 +309,26 @@ dependencies:
       - openai==1.51.2
       - openai-cost-tracker==0.5
       - optree==0.11.0
+      - pandas==2.2.3
       - pandas-market-calendars==4.4.0
       - pandocfilters==1.5.1
       - peewee==3.17.5
       - pipreqs==0.5.0
+      - polars==1.20.0
       - portpicker==1.6.0
       - protobuf==3.20.3
-      - pydantic==2.9.2
-      - pydantic-core==2.23.4
+      - pydantic==2.10.5
+      - pydantic-core==2.27.2
       - pygame==2.1.3
       - pyluach==2.2.0
       - pyyaml==6.0.2
       - referencing==0.35.1
+      - reportlab==4.2.5
       - rich==13.7.1
       - rlds==0.1.8
       - rpds-py==0.18.1
       - scikit-image==0.23.2
+      - scipy==1.15.1
       - sniffio==1.3.1
       - soupsieve==2.5
       - sympy==1.13.3
@@ -341,7 +345,7 @@ dependencies:
       - torch==2.4.1
       - tqdm==4.66.5
       - triton==3.0.0
-      - typing-extensions==4.12.1
+      - typing-extensions==4.12.2
       - webencodings==0.5.1
       - wordcloud==1.9.4
       - wrapt==1.16.0

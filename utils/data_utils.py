@@ -45,7 +45,7 @@ except ImportError:
     talib = TALibPlaceholder()
 
 import html2text
-from thesis_utils import PerformanceEstimator
+from rl_agent_utils import PerformanceEstimator
 
 # =============================================================================
 # Constants
@@ -145,6 +145,17 @@ GPT_VOCAB_SIZE = 50_257 # 50_128 or 100_256
 # =============================================================================
 # Utility Functions
 # =============================================================================
+
+def safe_pickle_load(path):
+    with open(path, 'rb') as f:
+        try:
+            return pickle.load(f)
+        except Exception as e:
+            print(f"Standard load failed for {path}, trying legacy workaround: {e}")
+            import io
+            raw = f.read()
+            return pd.read_pickle(io.BytesIO(raw), compression=None)
+
 
 def get_fundamentals(TARGET, FUNDAMENTALS_PATH):
     """
@@ -968,9 +979,7 @@ def feature_engineer_llm_signals(
     assert 0 < certainty <= 1, f"Certainty out of range: {certainty}"
 
     conf = confidence / MAX_CONFIDENCE
-    llm_signal = conf * certainty
-    #llm_signal = raw_signal ** beta
-    #assert 0 <= llm_signal <= 1, f"Signal out of range: {llm_signal}"
+    llm_signal = (conf * certainty) ** 0.5
 
     filtered_ticker_df.loc[index, 'strategy'] = strategy_file_name
     filtered_ticker_df.loc[index, 'trade_action'] = int(is_llm_long)
@@ -1561,14 +1570,14 @@ def plot_llm_trade(llm_df, plot=True, expert_trader_df=None, plot_other_trades=T
             linestyle='--',
             alpha=0.7
         )
-        ax2.plot(
+        """ax2.plot(
             llm_df.index,
             llm_df['other_reward'].cumsum(),
             color='green',
             label="Other",
             linestyle='dashdot',
             alpha=0.8
-        )
+        )"""
         ax2.set_ylabel("Cumulative Rewards", color='blue')
         ax2.tick_params(axis='y', labelcolor='blue')
 
@@ -1589,8 +1598,7 @@ def plot_llm_trade(llm_df, plot=True, expert_trader_df=None, plot_other_trades=T
 
         # Plot 2: Token Probabilities
         if "strat_signal_long" in llm_df.columns:
-            axes1[2].plot(llm_df.index, llm_df['strat_signal_long'], label="Long", alpha=0.7, color="green")
-            axes1[2].plot(llm_df.index, llm_df['strat_signal_short'], label="Short", alpha=0.7, color="red")
+            axes1[2].plot(llm_df.index, llm_df['trade_signal'], label="Trade Signal", alpha=0.7)
             axes1[2].set_title("LLM Signal Over Time")
             axes1[2].legend(bbox_to_anchor=(1.15, 1))
             axes1[2].grid(True)

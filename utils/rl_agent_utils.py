@@ -108,7 +108,7 @@ splitingDate = '2018-1-1'
 
 # Variables defining the default observation and state spaces
 stateLength = 30
-observationSpace = 1 + (stateLength-1)*4
+observationSpace = 1 + (stateLength - 1) * 6
 actionSpace = 2
 
 # Variables setting up the default transaction costs
@@ -204,10 +204,6 @@ companies = {
 }
 
 import pandas as pd
-
-from statsmodels.tsa.seasonal import seasonal_decompose
-from statsmodels.tsa.stattools import adfuller
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from matplotlib import pyplot as plt
 
 import math
@@ -791,7 +787,7 @@ class TDQN:
         # 5. trade_signal (min–max)
         coefficients.append((np.min(trade_signal) * margin, np.max(trade_signal) * margin))
 
-        # 6. trade_action (no normalization)
+        # 6. trade_action
         coefficients.append((0, 1))
 
         return coefficients
@@ -826,27 +822,20 @@ class TDQN:
 
         # 5. Normalize trade_signal (state[4])
         trade_signal = trade_signal[1:]
-        state[4] = [(x - coefficients[4][0]) / (coefficients[4][1] - coefficients[4][0]) if coefficients[4][1] != coefficients[4][0] else 0 for x in trade_signal]
+        # state[4] = [(x - coefficients[4][0]) / (coefficients[4][1] - coefficients[4][0]) if coefficients[4][1] != coefficients[4][0] else 0 for x in trade_signal]
+        state[4] = [x for x in trade_signal]
 
-        # 6. No Normalization for trade_action (state[5])
+        # 6. Normalize trade_action (state[5])
         trade_action = trade_action[1:]
         state[5] = [x for x in trade_action]
 
+        assert len(trade_signal) == len(trade_action)
+
         # 7. Compose final flattened state per time step
-        state_with_trade_action = []
-        for i in range(len(state[0])):
-            time_step = [
-                state[0][i],  # Close returns
-                state[1][i],  # Low/High delta
-                state[2][i],  # Relative close position
-                state[3][i],  # Volume
-                state[4][i],  # Normalized trade_signal
-                state[5][i],  # trade_action
-            ]
-            state_with_trade_action.append(time_step)
+        state = [item for sublist in state for item in sublist]
 
         # Flatten into single vector
-        return [x for step in state_with_trade_action for x in step]
+        return state
 
     def processReward(self, reward):
         """
@@ -880,6 +869,7 @@ class TDQN:
 
 
     def chooseAction(self, state):
+
         """
         GOAL: Choose a valid RL action from the action space according to the
               RL policy as well as the current RL state observed.
@@ -1107,14 +1097,14 @@ class TDQN:
                 # Compute the current performance on both the training and testing sets
                 if plotTraining:
                     # Training set performance
-                    trainingEnv = self.testing(trainingEnv, trainingEnv)
+                    trainingEnv, q0, q1 = self.testing(trainingEnv, trainingEnv)
                     analyser = PerformanceEstimator(trainingEnv.data)
                     performance = analyser.computeSharpeRatio()
                     performanceTrain.append(performance)
                     self.writer.add_scalar('Training performance (Sharpe Ratio)', performance, episode)
                     trainingEnv.reset()
                     # Testing set performance
-                    testingEnv = self.testing(trainingEnv, testingEnv)
+                    testingEnv, q0, q1 = self.testing(trainingEnv, testingEnv)
                     analyser = PerformanceEstimator(testingEnv.data)
                     performance = analyser.computeSharpeRatio()
                     performanceTest.append(performance)
@@ -1128,7 +1118,7 @@ class TDQN:
             self.policyNetwork.eval()
 
         # Assess the algorithm performance on the training trading environment
-        trainingEnv = self.testing(trainingEnv, trainingEnv)
+        trainingEnv, q0, q1 = self.testing(trainingEnv, trainingEnv)
 
         # If required, show the rendering of the trading environment
         if rendering:
@@ -1154,7 +1144,7 @@ class TDQN:
         # Closing of the tensorboard writer
         self.writer.close()
 
-        return trainingEnv
+        return trainingEnv, q0, q1
 
 
     def testing(self, trainingEnv, testingEnv, rendering=False, showPerformance=False):
@@ -1206,14 +1196,14 @@ class TDQN:
         # If required, show the rendering of the trading environment
         if rendering:
             testingEnv.render()
-            self.plotQValues(QValues0, QValues1, testingEnv.marketSymbol)
+            self.plotQValues(QValues0, QValues1, testingEnv)
 
         # If required, print the strategy performance in a table
         if showPerformance:
             analyser = PerformanceEstimator(testingEnv.data)
             analyser.displayPerformance('TDQN Test')
 
-        return testingEnv
+        return testingEnv, QValues0, QValues0
 
 
     def plotTraining(self, score, marketSymbol):
@@ -1234,24 +1224,24 @@ class TDQN:
         #plt.show()
 
 
-    def plotQValues(self, QValues0, QValues1, marketSymbol):
-        """
-        Plot sequentially the Q values related to both actions.
+    def plotQValues(self, QValues0, QValues1, env):
+        rewards = env.data['reward'].values
 
-        :param: - QValues0: Array of Q values linked to action 0.
-                - QValues1: Array of Q values linked to action 1.
-                - marketSymbol: Stock market trading symbol.
+        fig, ax1 = plt.subplots()
+        ax1.set_xlabel('Time')
+        ax1.set_ylabel('Q values')
+        ax1.plot(QValues0, label='Short Q', alpha=0.7)
+        ax1.plot(QValues1, label='Long Q', alpha=0.7)
+        ax1.legend(loc='upper left')
 
-        :return: /
-        """
+        ax2 = ax1.twinx()
+        ax2.set_ylabel('reward')
+        ax2.plot(rewards, color='black', linewidth=1.0, label='reward', alpha=0.3)
+        ax2.legend(loc='upper right')
 
-        fig = plt.figure()
-        ax1 = fig.add_subplot(111, ylabel='Q values', xlabel='Time')
-        ax1.plot(QValues0)
-        ax1.plot(QValues1)
-        ax1.legend(['Short', 'Long'])
-        plt.savefig(''.join(['images/', str(marketSymbol), '_QValues', '.png']))
-        #plt.show()
+        plt.title(f'{env.marketSymbol} - Q Values and Reward')
+        plt.tight_layout()
+        plt.savefig(f'images/{env.marketSymbol}_QValues_Reward.png')
 
 
     def plotExpectedPerformance(self, trainingEnv, trainingParameters=[], iterations=10):
@@ -1347,11 +1337,11 @@ class TDQN:
                             previousAction = action
 
                     # Compute both training and testing  current performances
-                    trainingEnv = self.testing(trainingEnv, trainingEnv)
+                    trainingEnv, q0, q1 = self.testing(trainingEnv, trainingEnv)
                     analyser = PerformanceEstimator(trainingEnv.data)
                     performanceTrain[episode][iteration] = analyser.computeSharpeRatio()
                     self.writer.add_scalar('Training performance (Sharpe Ratio)', performanceTrain[episode][iteration], episode)
-                    testingEnv = self.testing(trainingEnv, testingEnv)
+                    testingEnv, q0, q1 = self.testing(trainingEnv, testingEnv)
                     analyser = PerformanceEstimator(testingEnv.data)
                     performanceTest[episode][iteration] = analyser.computeSharpeRatio()
                     self.writer.add_scalar('Testing performance (Sharpe Ratio)', performanceTest[episode][iteration], episode)
@@ -1663,7 +1653,7 @@ class TradingSimulator:
                             plotTraining=True,
                             rendering=True,
                             showPerformance=True,
-                            models_path="./models",
+                            models_path="./data/models/",
                             saveStrategy=False):
         """
         GOAL: Simulate a new trading strategy on a certain stock included in the
@@ -1708,7 +1698,7 @@ class TradingSimulator:
                                  transactionCosts)
         tradingStrategy = TDQN(observationSpace, actionSpace)
 
-        trainingEnv = tradingStrategy.training(trainingEnv,
+        trainingEnv, qt0, qt1 = tradingStrategy.training(trainingEnv,
                                                trainingParameters=trainingParameters,
                                                verbose=verbose,
                                                rendering=rendering,
@@ -1723,7 +1713,7 @@ class TradingSimulator:
                                 money,
                                 stateLength,
                                 transactionCosts)
-        testingEnv = tradingStrategy.testing(trainingEnv,
+        testingEnv, q0, q1 = tradingStrategy.testing(trainingEnv,
                                              testingEnv,
                                              rendering=rendering,
                                              showPerformance=showPerformance)
@@ -1733,11 +1723,10 @@ class TradingSimulator:
 
         # 4. TERMINATION PHASE
         if(saveStrategy):
-            fileName = "".join([models_path, "DQN", ticker_symbol, "_", startingDate, "_", splitingDate])
+            fileName = "".join([models_path, "TQN", ticker_symbol, "_", startingDate, "_", splitingDate])
             tradingStrategy.saveModel(fileName)
 
-        return tradingStrategy, trainingEnv, testingEnv
-
+        return tradingStrategy, trainingEnv, qt0, qt1, testingEnv, q0, q1
 
     def simulateExistingStrategy(self,
                                  stockName,
@@ -1751,7 +1740,7 @@ class TradingSimulator:
                                  transactionCosts=transactionCosts,
                                  rendering=True,
                                  showPerformance=True,
-                                 models_path="./models",):
+                                 models_path="./data/models/"):
         """
         GOAL: Simulate an already existing trading strategy on a certain
               stock of the testbench, the strategy being loaded from the
@@ -1894,7 +1883,7 @@ class TradingEnv(gym.Env):
         self.data['returns'] = 0.
         self.data['otherMoney'] = self.data['Holdings'] + self.data['Cash']
         self.data['otherReturns'] = 0.
-
+        self.data['trade_align'] = 0.
         self.state = [
             self.data['Close'].iloc[:stateLength].tolist() if 'Close' in self.data.columns else [0] * stateLength,
             self.data['Low'].iloc[:stateLength].tolist() if 'Low' in self.data.columns else [0] * stateLength,
@@ -1902,7 +1891,7 @@ class TradingEnv(gym.Env):
             self.data['Volume'].iloc[:stateLength].tolist() if 'Volume' in self.data.columns else [0] * stateLength,
             self.data['trade_signal'].iloc[:stateLength].tolist() if 'trade_signal' in self.data.columns else [0] * stateLength,
             self.data['trade_action'].iloc[:stateLength].tolist() if 'trade_action' in self.data.columns else [0] * stateLength,
-            [0]  # Position
+            [0] # Position
         ]
 
         self.reward = 0.
@@ -1989,17 +1978,15 @@ class TradingEnv(gym.Env):
             lowerBound = deltaValues / (price * self.epsilon * (1 + self.transactionCosts))
         return lowerBound
 
+    def shape_reward(self, t, raw_reward):
+        trade_signal = self.data['trade_signal'][t]
+        action = self.data['action'][t]
+        llm_action = self.data['trade_action'][t]
+        align = 1 if action == llm_action else -1
 
-    def reward_function(self, t, action, customReward = False, other=False):
-        """ Paper's reward system. """
-        if not customReward:
-            r_t = self.data['returns'][t] if not other else self.data['otherReturns'][t]
-        else:
-            close_t = self.data['Close'][t]
-            close_t_1 = self.data['Close'][t - 1]
-            r_t = (close_t_1 - close_t) / close_t_1
-        return r_t
+        shaped = raw_reward + (align * trade_signal)
 
+        return shaped
 
     def step(self, action):
         """
@@ -2082,9 +2069,7 @@ class TradingEnv(gym.Env):
             self.reward = self.data['returns'][t]
         else:
             self.reward = (self.data['Close'][t-1] - self.data['Close'][t])/self.data['Close'][t-1]
-
-        # Shape it
-        self.reward = (self.data["trade_signal"][t]  if action == self.data["trade_action"][t] else -self.data["trade_signal"][t])
+        self.reward = self.shape_reward(t, self.reward)
         self.data['reward'][t] = self.reward
 
         # Transition to the next trading time step
@@ -2098,7 +2083,7 @@ class TradingEnv(gym.Env):
             self.data['Volume'][self.t - self.stateLength : self.t].tolist(),
             self.data['trade_signal'][self.t - self.stateLength : self.t].tolist(),
             self.data['trade_action'][self.t - self.stateLength : self.t].tolist(),
-            [self.data['Position'][self.t - 1]]
+            [self.data['Position'][self.t - 1]],
         ]
 
         if(self.t == self.data.shape[0]):
@@ -2144,17 +2129,15 @@ class TradingEnv(gym.Env):
                 otherCash = otherCash + numberOfShares * self.data['Close'][t] * (1 - self.transactionCosts)
                 otherHoldings = - self.numberOfShares * self.data['Close'][t]
 
-        self.data['otherMoney'][t] = otherHoldings + otherCash
-        self.data['otherReturns'][t] = (self.data['otherMoney'][t] - self.data['Money'][t-1])/self.data['Money'][t-1]
+        otherMoney = otherHoldings + otherCash
         if not customReward:
-            otherReward = (self.data['otherMoney'][t] - self.data['Money'][t-1])/self.data['Money'][t-1]
+            otherReward = (otherMoney - self.data['Money'][t-1])/self.data['Money'][t-1]
         else:
             otherReward = (self.data['Close'][t-1] - self.data['Close'][t])/self.data['Close'][t-1]
 
-        # Shape it
-        otherReward = (self.data["trade_signal"][t] if otherAction == self.data["trade_action"][t] else -self.data["trade_signal"][t])
-
+        otherReward = self.shape_reward(t, otherReward)
         self.data['other_reward'][t] = otherReward
+
 
         # TODO: FEATURES here:
         otherState = [
