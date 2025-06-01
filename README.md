@@ -4,7 +4,7 @@
   <img src="./LLM_RL_Banner.png" alt="LLM and RL Agentic Systems Banner" width="600"/>
 </p>
 
-This thesis explores the use of Large Language Models (LLMs) as financial strategists. We propose and evaluate a prompt-driven pipeline that combines expert-in-the-loop feedback, prompt refinement, and regret-minimizing reinforcement.
+This research explores the use of Large Language Models (LLMs) as financial strategists guiding smaller RL agents. We propose and evaluate a prompt-driven pipeline that combines expert-in-the-loop feedback, prompt refinement, and regret-minimizing reinforcement.
 
 The approach replicates and extends the Deep Q-Network (DQN) trading system by Thibaut Theate and Damien Ernst (2020) using LLM-generated strategies under different risk profiles.
 
